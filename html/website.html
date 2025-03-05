@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institution Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Animated Gradient Background */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(-45deg, #6a11cb, #2575fc, #ff758c, #ff7eb3);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+            color: white;
+            text-align: center;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffeb3b;
+        }
+
+        /* Header */
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 70px 0 20px;
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Container */
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding-top: 60px;
+        }
+
+        /* Sections */
+        .profile, .staff, .contact, .portfolio, .gov-exams, .group4-exams {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        /* Hover Effects */
+        .profile:hover, .staff:hover, .contact:hover, .portfolio:hover, .gov-exams:hover, .group4-exams:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Images */
+        .profile img, .staff img {
+            width: 150px;
+            border-radius: 50%;
+            margin: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .profile img:hover, .staff img:hover {
+            transform: scale(1.1);
+        }
+
+        .staff-members {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        /* Text Styles */
+        h2 {
+            font-size: 26px;
+            color: #ffeb3b;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Lists */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            font-size: 18px;
+            margin: 8px 0;
+            transition: color 0.3s ease-in-out;
+        }
+
+        ul li:hover {
+            color: #ffeb3b;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#profile">Owner</a>
+        <a href="#staff">Staff</a>
+        <a href="#contact">Contact</a>
+        <a href="#portfolio">Mission</a>
+        <a href="#gov-exams">Govt Exams</a>
+        <a href="#group4-exams">Group 4</a>
+    </nav>
+
+    <header>
+        Welcome to Our Institution
+    </header>
+
+    <div class="container">
+        <section id="profile" class="profile">
+            <h2>Institution Owner</h2>
+            <img src="owner.jpeg" alt="Institution Owner">
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Contact:</strong> +123456789</p>
+            <p><strong>Email:</strong> johndoe@example.com</p>
+        </section>
+
+        <section id="staff" class="staff">
+            <h2>Our Staff</h2>
+            <div class="staff-members">
+                <div>
+                    <img src="staff1.jpeg" alt="Staff Member">
+                    <p><strong>Name:</strong> Jane Smith</p>
+                    <p><strong>Role:</strong> Teacher</p>
+                </div>
+                <div>
+                    <img src="staff2.jpeg" alt="Staff Member">
+                    <p><strong>Name:</strong> Mark Johnson</p>
+                    <p><strong>Role:</strong> Administrator</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <p><strong>Phone:</strong> +123456789</p>
+            <p><strong>Email:</strong> contact@institution.com</p>
+            <p><strong>Address:</strong> 123 Institution St, City, Country</p>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <h2>Our Mission</h2>
+            <p>We strive to provide the best education and facilities to ensure our students achieve excellence.</p>
+        </section>
+
+        <!-- Government Exams Section -->
+        <section id="gov-exams" class="gov-exams">
+            <h2>Government Exams</h2>
+            <ul>
+                <li>UPSC - Civil Services</li>
+                <li>SSC - Staff Selection Commission</li>
+                <li>Bank Exams (IBPS, SBI, RBI)</li>
+                <li>Railway Exams (RRB NTPC, ALP)</li>
+                <li>State PSC Exams</li>
+            </ul>
+        </section>
+
+        <!-- Group 4 Exams Section -->
+        <section id="group4-exams" class="group4-exams">
+            <h2>Group 4 Exams</h2>
+            <p><strong>Eligibility:</strong> Minimum qualification is 10th or 12th pass.</p>
+            <p><strong>Syllabus:</strong></p>
+            <ul>
+                <li>General Studies</li>
+                <li>Aptitude & Reasoning</li>
+                <li>Current Affairs</li>
+                <li>General Tamil/English</li>
+            </ul>
+        </section>
+    </div>
+
+</body>
+</html>
